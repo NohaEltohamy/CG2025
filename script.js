@@ -1,1 +1,9 @@
-console.log('Test from Git')
+console.log('Test from Git');
+
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
